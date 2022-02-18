@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Todo App",
+    "images": {
+      "light": "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-light.png",
+      "dark": "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-dark.png"
+    },
+    "repo": "https://github.com/saullbrandao/todo-app",
+    "url": "https://todo-app-saullbrandao.vercel.app",
+    "description": {
+      "ptBR": [
+        "Pode adicionar, marcar como completo e deletar tarefas",
+        "Filtrar tarefas por todas/ativas/completas",
+        "Apagar todas as tarefas completas",
+        "Tarefas são persistidas na localStorage",
+        "Modo claro e escuro",
+        "Layout responsivo"
+      ],
+      "enUS": [
+        "Can add, mark as completed and delete tasks",
+        "Filter by all/active/complete tasks",
+        "Clear all completed tasks",
+        "Tasks are saved to localStorage for persistence",
+        "Light and dark mode",
+        "Responsive layout"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Domain Tracker",
+    "images": {
+      "light": "https://raw.githubusercontent.com/saullbrandao/domain-tracker/main/demo.png",
+      "dark": "https://raw.githubusercontent.com/saullbrandao/domain-tracker/main/demo.png"
+    },
+    "repo": "https://github.com/saullbrandao/domain-tracker",
+    "url": "https://domain-tracker-orcin-delta.vercel.app/",
+    "description": {
+      "ptBR": [
+        "Mostra informação do IP do usuário",
+        "Pesquisar por qualquer domínio ou endereço de IP, mostrar localização e ver informações chave sobre.",
+        "Layout responsivo"
+      ],
+      "enUS": [
+        "Show user's IP information on first page load",
+        "Search for any IP addresses or domains and see the key information and location",
+        "Responsive Layout"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "devBook",
+    "images": {
+      "light": "https://raw.githubusercontent.com/saullbrandao/devbook/main/demo-light.png",
+      "dark": "https://raw.githubusercontent.com/saullbrandao/devbook/main/demo-dark.png"
+    },
+    "repo": "https://github.com/saullbrandao/devbook",
+    "url": "https://devbook-mu.vercel.app/",
+    "description": {
+      "ptBR": [
+        "Mostra top 10 usuários do github na página inicial",
+        "Pode pesquisar usuários do github",
+        "Modo claro e escuro",
+        "Clicando em um usuário abre uma nova página mostrando estatísticas sobre ele"
+      ],
+      "enUS": [
+        "Display the top 10 github users on the homepage",
+        "You can search github users",
+        "Light and dark mode",
+        "Clicking on a card will open a new page which display the user's stats"
+      ]
+    }
+  },
+   {
+    "id": 4,
+    "title": "ig.news",
+    "images": {
+      "light": "https://raw.githubusercontent.com/saullbrandao/ignews/main/demo.png",
+      "dark": "https://raw.githubusercontent.com/saullbrandao/ignews/main/demo.png"
+    },
+    "repo": "https://github.com/saullbrandao/ignews",
+    "url": "https://ignews-saullbrandao.vercel.app/",
+    "description": {
+      "ptBR": [
+        "Blog de notícias sobre react com assinatura mensal",
+        "Login social usando github",
+        "Usa FaunaDB pra armazenar informações do usuário",
+        "Usa o Stripe para gerenciar o pagamento da assinatura",
+        "Se o usuário não possuir assinatura ativa somente um preview da postagem é mostrado"
+      ],
+      "enUS": [
+        "Subscription based blog with news about React",
+        "Social login with github",
+        "Store user information on FaunaDB",
+        "Use Stripe to handle subscription payment", 
+        "If the user has no active subscription only a post preview is showed"
+      ]
+    }
+  }
+]
