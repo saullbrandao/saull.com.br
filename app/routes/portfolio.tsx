@@ -1,10 +1,11 @@
+import { Footer } from '~/components/Footer'
 import { Project } from '~/components/Project'
 import projectsList from '../../projects.json'
 
 export default function Portfolio() {
   return (
     <div className="flex w-full flex-col items-center justify-center dark:bg-black">
-      <nav className="sticky top-0 z-10 flex w-full justify-center bg-gray-200 p-4 text-black dark:bg-gray-800 dark:text-white">
+      <nav className="sticky top-0 z-10 flex w-full justify-center bg-gray-200/50 p-4 text-black backdrop-blur-md dark:bg-gray-800/70 dark:text-white ">
         <div className="w-5xl flex w-full max-w-5xl justify-between">
           <a className="text-xl font-bold hover:text-blue" href="/">
             Saull Brandão
@@ -25,11 +26,7 @@ export default function Portfolio() {
             />
           )
         })}
-        <footer className="p-6 text-gray-800">
-          <span>
-            © {new Date().getFullYear()} Saull Brandão. All rights reserved.
-          </span>
-        </footer>
+        <Footer />
       </div>
     </div>
   )

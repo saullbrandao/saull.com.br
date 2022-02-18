@@ -1,4 +1,5 @@
 import { FaFolderOpen, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { Footer } from '~/components/Footer'
 
 export default function Index() {
   return (
@@ -50,11 +51,7 @@ export default function Index() {
           </li>
         </ul>
       </nav>
-      <footer className="text-gray-800 dark:text-gray-200">
-        <span>
-          © {new Date().getFullYear()} Saull Brandão. All rights reserved.
-        </span>
-      </footer>
+      <Footer />
     </div>
   )
 }
