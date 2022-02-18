@@ -21,7 +21,7 @@ export const Project = ({
   images
 }: ProjectProps) => {
   return (
-    <div className="flex flex-col gap-6 rounded-xl bg-gray-200 p-9 dark:bg-gray-800">
+    <div className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl">
       <div className="flex items-center justify-center gap-6 text-2xl font-bold text-black dark:text-white">
         <h2>{title}</h2>
         <a

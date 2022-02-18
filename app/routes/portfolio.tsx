@@ -4,7 +4,7 @@ import projectsList from '../../projects.json'
 
 export default function Portfolio() {
   return (
-    <div className="flex w-full flex-col items-center justify-center dark:bg-black">
+    <div className="flex flex-col items-center justify-center dark:bg-black">
       <nav className="sticky top-0 z-10 flex w-full justify-center bg-gray-200/50 p-4 text-black backdrop-blur-md dark:bg-gray-800/70 dark:text-white ">
         <div className="w-5xl flex w-full max-w-5xl justify-between">
           <a className="text-xl font-bold hover:text-blue" href="/">
@@ -12,8 +12,10 @@ export default function Portfolio() {
           </a>
         </div>
       </nav>
-      <div className="mt-4 flex max-w-5xl flex-col items-center gap-12">
-        <h1 className="self-start text-3xl font-bold text-blue">Projects</h1>
+      <div className="mt-4 flex max-w-5xl flex-col items-center gap-1 lg:gap-8">
+        <h1 className="mb-4 text-3xl font-bold text-blue lg:mb-0 lg:self-start">
+          Projects
+        </h1>
         {projectsList.map((project) => {
           return (
             <Project

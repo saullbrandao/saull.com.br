@@ -4,7 +4,9 @@ import { Footer } from '~/components/Footer'
 export default function Index() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-20 bg-white dark:bg-black">
-      <h1 className="text-7xl font-bold text-blue">Saull Brandão</h1>
+      <h1 className="text-center text-7xl font-bold text-blue">
+        Saull Brandão
+      </h1>
       <span className="text-3xl text-gray-800 dark:text-gray-200 ">
         Software Engineer
       </span>
