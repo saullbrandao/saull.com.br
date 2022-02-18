@@ -1,32 +1,32 @@
 module.exports = {
-  content: ["./app/**/*.{ts,tsx,jsx,js}"],
-  darkMode: "media",
+  content: ['./app/**/*.{ts,tsx,jsx,js}'],
+  darkMode: 'media',
   theme: {
     colors: {
-      blue: "#3689e6",
+      blue: '#3689e6',
       gray: {
-        200: "#d4d4d4",
-        800: "#333333",
+        200: '#d4d4d4',
+        800: '#333333'
       },
-      black: "#1a1a1a",
-      white: "#ffffff",
+      black: '#1a1a1a',
+      white: '#ffffff'
     },
     fontFamily: {
       sans: [
-        "Inter",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Roboto",
-        "Oxygen",
-        "Ubuntu",
-        "Cantarell",
-        "Open Sans",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
-    },
+        'Inter',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Open Sans',
+        'Helvetica Neue',
+        'sans-serif'
+      ]
+    }
   },
   variants: {},
-  plugins: [],
-};
+  plugins: []
+}
