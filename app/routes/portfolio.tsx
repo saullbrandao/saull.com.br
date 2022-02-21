@@ -1,3 +1,4 @@
+import { Link } from 'remix'
 import { Footer } from '~/components/Footer'
 import { Project } from '~/components/Project'
 import projectsList from '../../projects.json'
@@ -7,9 +8,9 @@ export default function Portfolio() {
     <div className="flex flex-col items-center justify-center dark:bg-black">
       <nav className="sticky top-0 z-10 flex w-full justify-center bg-gray-200/50 p-4 text-black backdrop-blur-md dark:bg-gray-800/70 dark:text-white ">
         <div className="w-5xl flex w-full max-w-5xl justify-between">
-          <a className="text-xl font-bold hover:text-blue" href="/">
+          <Link to="/" className="text-xl font-bold hover:text-blue">
             Saull Brandão
-          </a>
+          </Link>
         </div>
       </nav>
       <div className="mt-4 flex max-w-5xl flex-col items-center gap-1 lg:gap-8">

@@ -1,4 +1,5 @@
 import { FaFolderOpen, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { Link } from 'remix'
 import { Footer } from '~/components/Footer'
 
 export default function Index() {
@@ -13,13 +14,14 @@ export default function Index() {
       <nav>
         <ul className="flex gap-6 text-gray-800 dark:text-gray-200">
           <li>
-            <a
-              href="portfolio"
+            <Link
+              to="portfolio"
+              prefetch="intent"
               className="flex flex-col items-center hover:text-blue"
             >
               Portfolio
               <FaFolderOpen className="h-auto w-12" />
-            </a>
+            </Link>
           </li>
           <li>
             <a
