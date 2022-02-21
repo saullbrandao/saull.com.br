@@ -14,7 +14,10 @@ export function links() {
 }
 
 export const meta: MetaFunction = () => {
-  return { title: 'Saull Brandão' }
+  return {
+    title: 'Saull Brandão',
+    description: 'Saull Brandão personal website home page.'
+  }
 }
 
 export default function App() {
