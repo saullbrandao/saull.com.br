@@ -9,7 +9,7 @@ module.exports = {
         800: '#333333'
       },
       black: '#1a1a1a',
-      white: '#ffffff'
+      white: '#fafafa'
     },
     fontFamily: {
       sans: [
