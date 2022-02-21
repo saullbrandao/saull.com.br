@@ -5,7 +5,7 @@ import projectsList from '../../projects.json'
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col items-center justify-center dark:bg-black">
+    <div className="flex flex-col items-center justify-center">
       <nav className="sticky top-0 z-10 flex w-full justify-center bg-gray-200/50 p-4 text-black backdrop-blur-md dark:bg-gray-800/70 dark:text-white ">
         <div className="w-5xl flex w-full max-w-5xl justify-between">
           <Link to="/" className="text-xl font-bold hover:text-blue">
