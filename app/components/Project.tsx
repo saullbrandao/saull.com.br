@@ -27,7 +27,7 @@ export const Project = ({
         <a
           href={url}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="hover:text-blue"
         >
           <FaExternalLinkAlt />
@@ -35,7 +35,7 @@ export const Project = ({
         <a
           href={repo}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="hover:text-blue"
           aria-label="Github Repository"
         >

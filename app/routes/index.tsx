@@ -27,6 +27,7 @@ export default function Index() {
             <a
               href="https://github.com/saullbrandao"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center hover:text-blue"
             >
               Github
@@ -37,6 +38,7 @@ export default function Index() {
             <a
               href="https://www.linkedin.com/in/saullbrandao/"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center hover:text-blue"
             >
               Linkedin
@@ -47,6 +49,7 @@ export default function Index() {
             <a
               href="https://twitter.com/saullbrandao"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center hover:text-blue"
             >
               Twitter

@@ -4,33 +4,33 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
-} from "remix";
-import type { MetaFunction } from "remix";
-import styles from "~/tailwind.css";
+  ScrollRestoration
+} from 'remix'
+import type { MetaFunction } from 'remix'
+import styles from '~/tailwind.css'
 
 export function links() {
   return [
     {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
     },
     {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com",
-      crossOrigin: "true",
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossOrigin: 'true'
     },
     {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap",
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
     },
-    { rel: "stylesheet", href: styles },
-  ];
+    { rel: 'stylesheet', href: styles }
+  ]
 }
 
 export const meta: MetaFunction = () => {
-  return { title: "Saull Brandão" };
-};
+  return { title: 'Saull Brandão' }
+}
 
 export default function App() {
   return (
@@ -48,5 +48,5 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }
