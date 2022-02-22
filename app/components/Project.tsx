@@ -28,7 +28,7 @@ export const Project = ({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-all duration-500 ease-in-out hover:scale-110 hover:text-blue"
+          className="hover:scale-110 hover:text-blue hover:duration-500 hover:ease-in-out"
         >
           <FaExternalLinkAlt />
         </a>
@@ -36,7 +36,7 @@ export const Project = ({
           href={repo}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-all duration-500 ease-in-out hover:scale-110 hover:text-blue"
+          className="hover:scale-110 hover:text-blue hover:duration-500 hover:ease-in-out"
           aria-label="Github Repository"
         >
           <FaGithub />

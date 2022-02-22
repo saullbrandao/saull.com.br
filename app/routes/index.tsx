@@ -68,7 +68,7 @@ interface ListItemProps {
 }
 const ListItem = ({ children }: ListItemProps) => {
   return (
-    <li className="transition-all duration-500 ease-in-out hover:scale-110 hover:text-blue">
+    <li className="hover:scale-110 hover:text-blue hover:delay-75 hover:duration-500 hover:ease-in-out dark:bg-black">
       {children}
     </li>
   )
