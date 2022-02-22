@@ -13,52 +13,63 @@ export default function Index() {
       </span>
       <nav>
         <ul className="flex gap-6 text-gray-800 dark:text-gray-200">
-          <li>
+          <ListItem>
             <Link
               to="portfolio"
               prefetch="intent"
-              className="flex flex-col items-center hover:text-blue"
+              className="flex flex-col items-center"
             >
               Portfolio
               <FaFolderOpen className="h-auto w-12" />
             </Link>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <a
               href="https://github.com/saullbrandao"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center hover:text-blue"
+              className="flex flex-col items-center "
             >
               Github
               <FaGithub className="h-auto w-12" />
             </a>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <a
               href="https://www.linkedin.com/in/saullbrandao/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center hover:text-blue"
+              className="flex flex-col items-center "
             >
               Linkedin
               <FaLinkedin className="h-auto w-12" />
             </a>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <a
               href="https://twitter.com/saullbrandao"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center hover:text-blue"
+              className="flex flex-col items-center "
             >
               Twitter
               <FaTwitter className="h-auto w-12" />
             </a>
-          </li>
+          </ListItem>
         </ul>
       </nav>
       <Footer />
     </div>
+  )
+}
+
+interface ListItemProps {
+  children: React.ReactNode
+}
+const ListItem = ({ children }: ListItemProps) => {
+  return (
+    <li className="transition-all duration-500 ease-in-out hover:scale-110 hover:text-blue">
+      {children}
+    </li>
   )
 }
