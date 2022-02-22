@@ -15,9 +15,9 @@ export default function Index() {
         </span>
         <nav>
           <motion.ul
-            initial={{ x: 100, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.75 }}
             className="flex gap-6 text-gray-800 dark:text-gray-200"
           >
             <ListItem>

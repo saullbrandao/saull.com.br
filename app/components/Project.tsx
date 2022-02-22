@@ -22,13 +22,13 @@ export const Project = ({
   images
 }: ProjectProps) => {
   return (
-    <motion.div
-      initial={{ x: 50, y: 50, opacity: 0 }}
-      animate={{ x: 0, y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl"
-    >
-      <div className="flex items-center justify-center gap-6 text-2xl font-bold text-black dark:text-white">
+    <div className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl">
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.75 }}
+        className="flex items-center justify-center gap-6 text-2xl font-bold text-black dark:text-white"
+      >
         <h2>{title}</h2>
         <a
           href={url}
@@ -47,7 +47,7 @@ export const Project = ({
         >
           <FaGithub />
         </a>
-      </div>
+      </motion.div>
       <img
         className="hidden sm:block"
         src={images.light}
@@ -60,6 +60,6 @@ export const Project = ({
           <li key={index}>{el}</li>
         ))}
       </ul>
-    </motion.div>
+    </div>
   )
 }
