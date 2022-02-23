@@ -1,5 +1,11 @@
 import { motion } from 'framer-motion'
-import { FaFolderOpen, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import {
+  FaAddressCard,
+  FaFolderOpen,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa'
 import { Link } from 'remix'
 import { Footer } from '~/components/Footer'
 
@@ -28,6 +34,16 @@ export default function Index() {
               >
                 Portfolio
                 <FaFolderOpen className="h-auto w-12" />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                to="resume.pdf"
+                target="_blank"
+                className="flex flex-col items-center"
+              >
+                Resume
+                <FaAddressCard className="h-auto w-12" />
               </Link>
             </ListItem>
             <ListItem>
