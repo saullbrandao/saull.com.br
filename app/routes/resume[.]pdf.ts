@@ -6,7 +6,7 @@ const drive = google.drive('v3')
 
 export const loader: LoaderFunction = async () => {
   const auth = new google.auth.GoogleAuth({
-    keyFile: 'credentials.json',
+    keyFile: __dirname + '../../credentials.json',
     scopes: 'https://www.googleapis.com/auth/drive.readonly'
   })
 
