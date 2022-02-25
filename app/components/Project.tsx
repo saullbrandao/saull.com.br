@@ -50,6 +50,7 @@ export const Project = ({
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-110 hover:text-blue hover:duration-500 hover:ease-in-out"
+          aria-label={`Visit ${title} website`}
         >
           <FaExternalLinkAlt />
         </a>
@@ -58,7 +59,7 @@ export const Project = ({
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-110 hover:text-blue hover:duration-500 hover:ease-in-out"
-          aria-label="Github Repository"
+          aria-label={`${title} github repository`}
         >
           <FaGithub />
         </a>
