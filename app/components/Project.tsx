@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 interface ProjectProps {
@@ -21,6 +22,19 @@ export const Project = ({
   repo,
   images
 }: ProjectProps) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false)
+
+  const onImageLoad = () => {
+    setIsImageLoaded(true)
+  }
+  // Sometimes the image is not loaded when the component is mounted.
+  const imgRef = useRef<HTMLImageElement>(null)
+  useEffect(() => {
+    if (imgRef.current && imgRef.current.complete) {
+      onImageLoad()
+    }
+  }, [])
+
   return (
     <div className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl">
       <motion.div
@@ -48,13 +62,24 @@ export const Project = ({
           <FaGithub />
         </a>
       </motion.div>
-      <img
-        className="hidden sm:block"
-        src={images.light}
-        alt="demo"
-        width={1920}
-        height={930}
-      />
+      <div
+        className={`${
+          isImageLoaded ? 'animate-none' : 'animate-pulse'
+        } bg-gradient-to-r from-[#abacae] via-[#7e8087] to-[#abacae] sm:aspect-w-16 sm:aspect-h-8`}
+      >
+        <img
+          className={`hidden sm:block ${
+            isImageLoaded
+              ? 'opacity-100 transition-opacity duration-1000'
+              : 'opacity-0'
+          }`}
+          src={images.light}
+          onLoad={onImageLoad}
+          alt="demo"
+          ref={imgRef}
+          decoding="async"
+        />
+      </div>
       <ul className="list-inside list-[circle] leading-8 text-gray-800 dark:text-gray-200">
         {description['enUS'].map((el, index) => (
           <li key={index}>{el}</li>

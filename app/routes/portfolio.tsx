@@ -23,7 +23,7 @@ export default function Portfolio() {
           </Link>
         </div>
       </nav>
-      <div className="mt-4 flex max-w-5xl flex-col items-center gap-1 lg:gap-8">
+      <div className="mt-4 flex w-full max-w-5xl flex-col items-center gap-1 lg:gap-8">
         <h1 className="mb-4 text-3xl font-bold text-blue lg:mb-0 lg:self-start">
           Projects
         </h1>
