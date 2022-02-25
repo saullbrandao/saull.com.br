@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 interface ProjectProps {
@@ -27,7 +27,8 @@ export const Project = ({
   const onImageLoad = () => {
     setIsImageLoaded(true)
   }
-  // Sometimes the image is not loaded when the component is mounted.
+
+  // Fix for the bug where the image doesn't trigger the onLoad function when it finish loading
   const imgRef = useRef<HTMLImageElement>(null)
   useEffect(() => {
     if (imgRef.current && imgRef.current.complete) {
