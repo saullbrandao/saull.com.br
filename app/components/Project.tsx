@@ -76,6 +76,7 @@ export const Project = ({
           }`}
           src={images.light}
           onLoad={onImageLoad}
+          loading="lazy"
           alt="demo"
           ref={imgRef}
           decoding="async"
