@@ -39,8 +39,8 @@
 
 # :page_with_curl: About the Project
 
-<!-- ![saull.com.br](https://raw.githubusercontent.com/saullbrandao/saull.com.br/main/demo-light.png)
-![saull.com.br](https://raw.githubusercontent.com/saullbrandao/saull.com.br/main/demo-dark.png) -->
+![saull.com.br](https://raw.githubusercontent.com/saullbrandao/saull.com.br/main/demo-light.png)
+![saull.com.br](https://raw.githubusercontent.com/saullbrandao/saull.com.br/main/demo-dark.png)
 
 - Links to my social media accounts and github.
 - Portfolio page with my projects.
