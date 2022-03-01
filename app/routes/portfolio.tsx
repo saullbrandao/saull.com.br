@@ -28,16 +28,7 @@ export default function Portfolio() {
           Projects
         </h1>
         {projectsList.map((project) => {
-          return (
-            <Project
-              description={project.description}
-              repo={project.repo}
-              title={project.title}
-              url={project.url}
-              key={project.id}
-              images={project.images}
-            />
-          )
+          return <Project project={project} key={project.title} />
         })}
         <Footer />
       </div>

@@ -25,7 +25,8 @@
         "Light and dark mode",
         "Responsive layout"
       ]
-    }
+    },
+    "technologies": ["Next.js", "TailwindCSS", "Typescript"]
   },
   {
     "id": 2,
@@ -47,7 +48,14 @@
         "Search for any IP addresses or domains and see the key information and location",
         "Responsive Layout"
       ]
-    }
+    },
+    "technologies": [
+      "Next.js",
+      "TailwindCSS",
+      "Typescript",
+      "Leaflet",
+      "React Hot Toast"
+    ]
   },
   {
     "id": 3,
@@ -71,9 +79,15 @@
         "Light and dark mode",
         "Clicking on a card will open a new page which display the user's stats"
       ]
-    }
+    },
+    "technologies": [
+      "Next.js",
+      "TailwindCSS",
+      "Typescript",
+      "React Elastic Carousel"
+    ]
   },
-   {
+  {
     "id": 4,
     "title": "ig.news",
     "images": {
@@ -94,9 +108,10 @@
         "Subscription based blog with news about React",
         "Social login with github",
         "Store user information on FaunaDB",
-        "Use Stripe to handle subscription payment", 
+        "Use Stripe to handle subscription payment",
         "If the user has no active subscription only a post preview is showed"
       ]
-    }
+    },
+    "technologies": ["Next.js", "Next-Auth", "FaunaDB", "Prismic CMS", "Stripe"]
   }
 ]

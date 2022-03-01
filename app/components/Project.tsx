@@ -3,25 +3,22 @@ import { useEffect, useRef, useState } from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 interface ProjectProps {
-  title: string
-  url: string
-  repo: string
-  description: {
-    enUS: string[]
-  }
-  images: {
-    light: string
-    dark: string
+  project: {
+    title: string
+    url: string
+    repo: string
+    description: {
+      enUS: string[]
+    }
+    images: {
+      light: string
+      dark: string
+    }
+    technologies: string[]
   }
 }
 
-export const Project = ({
-  title,
-  url,
-  description,
-  repo,
-  images
-}: ProjectProps) => {
+export const Project = ({ project }: ProjectProps) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false)
 
   const onImageLoad = () => {
@@ -35,6 +32,8 @@ export const Project = ({
       onImageLoad()
     }
   }, [])
+
+  const { description, images, repo, technologies, title, url } = project
 
   return (
     <div className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl">
@@ -83,10 +82,19 @@ export const Project = ({
           decoding="async"
         />
       </div>
-      <ul className="list-inside list-[circle] leading-8 text-gray-800 dark:text-gray-200">
-        {description['enUS'].map((el, index) => (
-          <li key={index}>{el}</li>
-        ))}
+      <ul className="grid list-inside list-[circle] gap-x-20 gap-y-8 leading-8 text-gray-800 dark:text-gray-200 md:grid-cols-2">
+        <div>
+          <h3 className="mb-2 text-lg font-bold">Description</h3>
+          {description['enUS'].map((el, index) => (
+            <li key={index}>{el}</li>
+          ))}
+        </div>
+        <div>
+          <h3 className="mb-2 text-lg font-bold">Technologies</h3>
+          {technologies.map((el, index) => (
+            <li key={index}>{el}</li>
+          ))}
+        </div>
       </ul>
     </div>
   )
