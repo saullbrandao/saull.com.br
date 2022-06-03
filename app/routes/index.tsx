@@ -17,7 +17,7 @@ export default function Index() {
           Saull Brandão
         </h1>
         <span className="text-3xl text-gray-800 dark:text-gray-200 ">
-          Software Engineer
+          Fullstack Developer
         </span>
         <nav>
           <motion.ul

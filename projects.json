@@ -1,6 +1,39 @@
 [
   {
     "id": 1,
+    "title": "Baddit",
+    "images": {
+      "light": "https://raw.githubusercontent.com/saullbrandao/baddit/master/demo-light.png",
+      "dark": "https://raw.githubusercontent.com/saullbrandao/baddit/master/demo-dark.png"
+    },
+    "repo": "https://github.com/saullbrandao/baddit",
+    "url": "https://badddit.herokuapp.com/",
+    "description": {
+      "ptBR": [
+        "Inspirado no Reddit",
+        "Pode criar posts, entrar em comunidades, votar e comentar",
+        "Usa PostgreSQL como banco de dados",
+        "Apenas usuários autenticados podem criar posts",
+        "Modo claro e escuro"
+      ],
+      "enUS": [
+        "Inspired by Reddit",
+        "Can create posts, join communities, vote and comment",
+        "Uses PostgreSQL as database",
+        "Only authenticated users can create posts",
+        "Light and dark mode"
+      ]
+    },
+    "technologies": [
+      "Ruby on Rails",
+      "Devise",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Hotwire"
+    ]
+  },
+  {
+    "id": 2,
     "title": "Todo App",
     "images": {
       "light": "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-light.png",
@@ -26,10 +59,14 @@
         "Responsive layout"
       ]
     },
-    "technologies": ["Next.js", "TailwindCSS", "Typescript"]
+    "technologies": [
+      "Next.js",
+      "TailwindCSS",
+      "Typescript"
+    ]
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Domain Tracker",
     "images": {
       "light": "https://raw.githubusercontent.com/saullbrandao/domain-tracker/main/demo.png",
@@ -86,32 +123,5 @@
       "Typescript",
       "React Elastic Carousel"
     ]
-  },
-  {
-    "id": 4,
-    "title": "ig.news",
-    "images": {
-      "light": "https://raw.githubusercontent.com/saullbrandao/ignews/main/demo.png",
-      "dark": "https://raw.githubusercontent.com/saullbrandao/ignews/main/demo.png"
-    },
-    "repo": "https://github.com/saullbrandao/ignews",
-    "url": "https://ignews-saullbrandao.vercel.app/",
-    "description": {
-      "ptBR": [
-        "Blog de notícias sobre react com assinatura mensal",
-        "Login social usando github",
-        "Usa FaunaDB pra armazenar informações do usuário",
-        "Usa o Stripe para gerenciar o pagamento da assinatura",
-        "Se o usuário não possuir assinatura ativa somente um preview da postagem é mostrado"
-      ],
-      "enUS": [
-        "Subscription based blog with news about React",
-        "Social login with github",
-        "Store user information on FaunaDB",
-        "Use Stripe to handle subscription payment",
-        "If the user has no active subscription only a post preview is showed"
-      ]
-    },
-    "technologies": ["Next.js", "Next-Auth", "FaunaDB", "Prismic CMS", "Stripe"]
   }
 ]

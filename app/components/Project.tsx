@@ -64,17 +64,15 @@ export const Project = ({ project }: ProjectProps) => {
         </a>
       </motion.div>
       <div
-        className={`${
-          isImageLoaded ? 'animate-none' : 'animate-pulse'
-        } bg-gradient-to-r from-[#abacae] via-[#7e8087] to-[#abacae] sm:aspect-w-16 sm:aspect-h-8`}
+        className={`${isImageLoaded ? 'animate-none' : 'animate-pulse'
+          } bg-gradient-to-r from-[#abacae] via-[#7e8087] to-[#abacae] sm:aspect-w-16 sm:aspect-h-8`}
       >
         <img
-          className={`hidden sm:block ${
-            isImageLoaded
+          className={`hidden sm:block ${isImageLoaded
               ? 'opacity-100 transition-opacity duration-1000'
               : 'opacity-0'
-          }`}
-          src={images.light}
+            }`}
+          src={images.dark}
           onLoad={onImageLoad}
           loading="lazy"
           alt="demo"
