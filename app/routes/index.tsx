@@ -68,17 +68,6 @@ export default function Index() {
                 <FaLinkedin className="h-auto w-12" />
               </a>
             </ListItem>
-            <ListItem>
-              <a
-                href="https://twitter.com/saullbrandao"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center "
-              >
-                Twitter
-                <FaTwitter className="h-auto w-12" />
-              </a>
-            </ListItem>
           </motion.ul>
         </nav>
         <Footer />
