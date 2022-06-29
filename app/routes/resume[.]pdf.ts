@@ -3,7 +3,7 @@ import { LoaderFunction } from 'remix'
 export const loader: LoaderFunction = async () => {
   try {
     const res = await fetch(
-      'https://github.com/saullbrandao/saull.com.br/raw/main/cv.pdf'
+      'https://github.com/saullbrandao/saull.com.br/raw/main/resume.pdf'
     )
 
     // @ts-ignore
