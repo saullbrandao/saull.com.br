@@ -1,13 +1,17 @@
-import { Link, MetaFunction } from 'remix'
 import { Footer } from '~/components/Footer'
 import { Project } from '~/components/Project'
 import projectsList from '../../projects.json'
+import { V2_MetaFunction } from '@remix-run/node'
+import { Link } from '@remix-run/react'
 
-export const meta: MetaFunction = () => {
-  return {
-    title: 'Saull Brandão Portfolio',
-    description: 'List of projects developed by Saull Brandão.'
-  }
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: 'Saull Brandão Portfolio' },
+    {
+      name: 'description',
+      content: 'List of projects developed by Saull Brandão.'
+    }
+  ]
 }
 
 export default function Portfolio() {

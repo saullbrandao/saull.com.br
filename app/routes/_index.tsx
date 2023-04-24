@@ -1,12 +1,11 @@
+import { Link } from '@remix-run/react'
 import { motion } from 'framer-motion'
 import {
   FaAddressCard,
   FaFolderOpen,
   FaGithub,
-  FaLinkedin,
-  FaTwitter
+  FaLinkedin
 } from 'react-icons/fa'
-import { Link } from 'remix'
 import { Footer } from '~/components/Footer'
 
 export default function Index() {
@@ -16,9 +15,14 @@ export default function Index() {
         <h1 className="text-center text-7xl font-bold text-blue">
           Saull Brandão
         </h1>
-        <span className="text-3xl text-gray-800 dark:text-gray-200 ">
-          Fullstack Developer | Ruby on Rails
-        </span>
+        <div className="flex flex-col items-center gap-4">
+          <span className="text-4xl text-gray-800 dark:text-gray-200 ">
+            Fullstack Developer
+          </span>
+          <span className="text-3xl text-gray-800 dark:text-gray-200 ">
+            Java | Spring | Typescript | Angular
+          </span>
+        </div>
         <nav>
           <motion.ul
             initial={{ x: 50, opacity: 0 }}

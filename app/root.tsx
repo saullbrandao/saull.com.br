@@ -1,3 +1,4 @@
+import { LinksFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -5,20 +6,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from 'remix'
-import type { MetaFunction } from 'remix'
-import styles from '~/tailwind.css'
-
-export function links() {
-  return [{ rel: 'stylesheet', href: styles }]
-}
-
-export const meta: MetaFunction = () => {
-  return {
-    title: 'Saull Brandão',
-    description: 'Saull Brandão personal website home page.'
-  }
-}
+} from '@remix-run/react'
+import styles from './styles/tailwind.css'
 
 export default function App() {
   return (
@@ -37,4 +26,16 @@ export default function App() {
       </body>
     </html>
   )
+}
+
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+
+export const meta = () => {
+  return [
+    { title: 'Saull Brandão' },
+    {
+      name: 'description',
+      content: 'Saull Brandão personal website home page.'
+    }
+  ]
 }
