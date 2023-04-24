@@ -20,7 +20,7 @@ export default function Index() {
             Fullstack Developer
           </span>
           <span className="text-3xl text-gray-800 dark:text-gray-200 ">
-            Java | Spring | Typescript | Angular
+            Java | Spring | Typescript | Angular | SQL
           </span>
         </div>
         <nav>

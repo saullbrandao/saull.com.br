@@ -7,13 +7,8 @@ interface ProjectProps {
     title: string
     url: string
     repo: string
-    description: {
-      enUS: string[]
-    }
-    images: {
-      light: string
-      dark: string
-    }
+    description: string[]
+    images: string[]
     technologies: string[]
   }
 }
@@ -64,15 +59,17 @@ export const Project = ({ project }: ProjectProps) => {
         </a>
       </motion.div>
       <div
-        className={`${isImageLoaded ? 'animate-none' : 'animate-pulse'
-          } bg-gradient-to-r from-[#abacae] via-[#7e8087] to-[#abacae] sm:aspect-w-16 sm:aspect-h-8`}
+        className={`${
+          isImageLoaded ? 'animate-none' : 'animate-pulse'
+        } bg-gradient-to-r from-[#abacae] via-[#7e8087] to-[#abacae] sm:aspect-h-8 sm:aspect-w-16`}
       >
         <img
-          className={`hidden sm:block ${isImageLoaded
+          className={`hidden sm:block ${
+            isImageLoaded
               ? 'opacity-100 transition-opacity duration-1000'
               : 'opacity-0'
-            }`}
-          src={images.dark}
+          }`}
+          src={images[0]}
           onLoad={onImageLoad}
           loading="lazy"
           alt="demo"
@@ -80,20 +77,20 @@ export const Project = ({ project }: ProjectProps) => {
           decoding="async"
         />
       </div>
-      <ul className="grid list-inside list-[circle] gap-x-20 gap-y-8 leading-8 text-gray-800 dark:text-gray-200 md:grid-cols-2">
-        <div>
+      <div className="grid list-inside list-[circle] gap-x-20 gap-y-8 leading-8 text-gray-800 dark:text-gray-200 md:grid-cols-2">
+        <ul className="list-inside list-[circle]">
           <h3 className="mb-2 text-lg font-bold">Description</h3>
-          {description['enUS'].map((el, index) => (
+          {description.map((el, index) => (
             <li key={index}>{el}</li>
           ))}
-        </div>
-        <div>
+        </ul>
+        <ul className="list-inside list-[circle]">
           <h3 className="mb-2 text-lg font-bold">Technologies</h3>
           {technologies.map((el, index) => (
             <li key={index}>{el}</li>
           ))}
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   )
 }
