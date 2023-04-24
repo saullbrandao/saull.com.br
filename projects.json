@@ -1,127 +1,56 @@
 [
   {
     "id": 1,
-    "title": "Baddit",
-    "images": {
-      "light": "https://raw.githubusercontent.com/saullbrandao/baddit/master/demo-light.png",
-      "dark": "https://raw.githubusercontent.com/saullbrandao/baddit/master/demo-dark.png"
-    },
-    "repo": "https://github.com/saullbrandao/baddit",
-    "url": "https://badddit.herokuapp.com/",
-    "description": {
-      "ptBR": [
-        "Inspirado no Reddit",
-        "Pode criar posts, entrar em comunidades, votar e comentar",
-        "Usa PostgreSQL como banco de dados",
-        "Apenas usuários autenticados podem criar posts",
-        "Modo claro e escuro"
-      ],
-      "enUS": [
-        "Inspired by Reddit",
-        "Can create posts, join communities, vote and comment",
-        "Uses PostgreSQL as database",
-        "Only authenticated users can create posts",
-        "Light and dark mode"
-      ]
-    },
-    "technologies": [
-      "Ruby on Rails",
-      "Devise",
-      "PostgreSQL",
-      "TailwindCSS",
-      "Hotwire"
-    ]
+    "title": "Todo App",
+    "images": [
+      "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-light.png"
+    ],
+    "repo": "https://github.com/saullbrandao/todo-app",
+    "url": "https://todo-app-saullbrandao.vercel.app/",
+    "description": [
+      "Can add, mark as completed and delete tasks",
+      "Filter by all/active/complete tasks",
+      "Can clear all completed tasks",
+      "Tasks are persisted using localStorage",
+      "Light and dark mode",
+      "Responsive layout"
+    ],
+    "technologies": ["Next.js", "Typescript", "TailwindCSS"]
   },
   {
     "id": 2,
-    "title": "Todo App",
-    "images": {
-      "light": "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-light.png",
-      "dark": "https://raw.githubusercontent.com/saullbrandao/todo-app/main/demo-dark.png"
-    },
-    "repo": "https://github.com/saullbrandao/todo-app",
-    "url": "https://todo-app-saullbrandao.vercel.app",
-    "description": {
-      "ptBR": [
-        "Pode adicionar, marcar como completo e deletar tarefas",
-        "Filtrar tarefas por todas/ativas/completas",
-        "Apagar todas as tarefas completas",
-        "Tarefas são persistidas na localStorage",
-        "Modo claro e escuro",
-        "Layout responsivo"
-      ],
-      "enUS": [
-        "Can add, mark as completed and delete tasks",
-        "Filter by all/active/complete tasks",
-        "Clear all completed tasks",
-        "Tasks are saved to localStorage for persistence",
-        "Light and dark mode",
-        "Responsive layout"
-      ]
-    },
-    "technologies": [
-      "Next.js",
-      "TailwindCSS",
-      "Typescript"
-    ]
+    "title": "LABMedical",
+    "images": [
+      "https://camo.githubusercontent.com/86f0ec64008683147041425b077c9c1eca433872ee7795f5524178d6bdb20cc6/68747470733a2f2f692e696d6775722e636f6d2f376d585a4474512e706e67"
+    ],
+    "repo": "https://github.com/saullbrandao/labmedical",
+    "url": "https://github.com/saullbrandao/labmedical",
+    "description": [
+      "Medical inventory management software",
+      "Login with email and password",
+      "Home page with system stats and list of patients",
+      "User can create, edit and delete a patient, appointment or exam record",
+      "Every patient has a page with personal information, appointments and exams",
+      "Responsive layout"
+    ],
+    "technologies": ["Angular", "Typescript", "Bootstrap"]
   },
-  {
-    "id": 4,
-    "title": "Domain Tracker",
-    "images": {
-      "light": "https://raw.githubusercontent.com/saullbrandao/domain-tracker/main/demo.png",
-      "dark": "https://raw.githubusercontent.com/saullbrandao/domain-tracker/main/demo.png"
-    },
-    "repo": "https://github.com/saullbrandao/domain-tracker",
-    "url": "https://domain-tracker-orcin-delta.vercel.app/",
-    "description": {
-      "ptBR": [
-        "Mostra informação do IP do usuário",
-        "Pesquisar por qualquer domínio ou endereço de IP, mostrar localização e ver informações chave sobre.",
-        "Layout responsivo"
-      ],
-      "enUS": [
-        "Show user's IP information on first page load",
-        "Search for any IP addresses or domains and see the key information and location",
-        "Responsive Layout"
-      ]
-    },
-    "technologies": [
-      "Next.js",
-      "TailwindCSS",
-      "Typescript",
-      "Leaflet",
-      "React Hot Toast"
-    ]
-  },
+
   {
     "id": 3,
-    "title": "devBook",
-    "images": {
-      "light": "https://raw.githubusercontent.com/saullbrandao/devbook/main/demo-light.png",
-      "dark": "https://raw.githubusercontent.com/saullbrandao/devbook/main/demo-dark.png"
-    },
-    "repo": "https://github.com/saullbrandao/devbook",
-    "url": "https://devbook-mu.vercel.app/",
-    "description": {
-      "ptBR": [
-        "Mostra top 10 usuários do github na página inicial",
-        "Pode pesquisar usuários do github",
-        "Modo claro e escuro",
-        "Clicando em um usuário abre uma nova página mostrando estatísticas sobre ele"
-      ],
-      "enUS": [
-        "Display the top 10 github users on the homepage",
-        "You can search github users",
-        "Light and dark mode",
-        "Clicking on a card will open a new page which display the user's stats"
-      ]
-    },
-    "technologies": [
-      "Next.js",
-      "TailwindCSS",
-      "Typescript",
-      "React Elastic Carousel"
-    ]
+    "title": "DEVinKnowledge",
+    "images": [
+      "https://camo.githubusercontent.com/b886c5ff96858d71bce49f85b4de8848784f8580d8d5e8af04f44803fb8f4554/68747470733a2f2f692e696d6775722e636f6d2f387441575236342e706e67"
+    ],
+    "repo": "https://github.com/saullbrandao/DEVinKnowledge",
+    "url": "https://devinknowledge-saullbrandao.vercel.app/",
+    "description": [
+      "Knowledge base system with programming tips",
+      "User can create, edit and delete tips",
+      "Tips are persisted using localStorage",
+      "Indicators that show the user the system statistics",
+      "User can search by tip title"
+    ],
+    "technologies": ["HTML", "CSS", "Javascript"]
   }
 ]
