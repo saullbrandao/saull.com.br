@@ -40,7 +40,7 @@ export const Project = ({ project }: ProjectProps) => {
       >
         <h2>{title}</h2>
         <a
-          href={url}
+          href={url || repo}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-110 hover:text-blue hover:duration-500 hover:ease-in-out"
