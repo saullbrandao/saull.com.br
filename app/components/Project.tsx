@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { Badge } from './Badge'
 
 interface ProjectProps {
   project: {
@@ -31,7 +32,7 @@ export const Project = ({ project }: ProjectProps) => {
   const { description, images, repo, technologies, title, url } = project
 
   return (
-    <div className="flex w-full flex-col gap-6 bg-gray-200 p-9 dark:bg-gray-800 lg:rounded-xl">
+    <div className="flex w-full flex-col gap-6 border border-blue p-9 lg:rounded-xl">
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -58,6 +59,11 @@ export const Project = ({ project }: ProjectProps) => {
           <FaGithub />
         </a>
       </motion.div>
+      <ul className="flex list-inside list-[circle] justify-center gap-2">
+        {technologies.map((el, index) => (
+          <Badge index={index} element={el} />
+        ))}
+      </ul>
       <div
         className={`${
           isImageLoaded ? 'animate-none' : 'animate-pulse'
@@ -77,16 +83,9 @@ export const Project = ({ project }: ProjectProps) => {
           decoding="async"
         />
       </div>
-      <div className="grid list-inside list-[circle] gap-x-20 gap-y-8 leading-8 text-gray-800 dark:text-gray-200 md:grid-cols-2">
+      <div className="leading-8 text-gray-800 dark:text-gray-200">
         <ul className="list-inside list-[circle]">
-          <h3 className="mb-2 text-lg font-bold">Description</h3>
           {description.map((el, index) => (
-            <li key={index}>{el}</li>
-          ))}
-        </ul>
-        <ul className="list-inside list-[circle]">
-          <h3 className="mb-2 text-lg font-bold">Technologies</h3>
-          {technologies.map((el, index) => (
             <li key={index}>{el}</li>
           ))}
         </ul>

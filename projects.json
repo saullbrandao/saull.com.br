@@ -48,7 +48,7 @@
       "Light and dark mode",
       "Responsive layout"
     ],
-    "technologies": ["Next.js", "Typescript", "TailwindCSS"]
+    "technologies": ["Next.js", "React", "Typescript", "TailwindCSS"]
   },
   {
     "id": 4,
